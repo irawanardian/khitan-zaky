@@ -366,13 +366,26 @@
       id="rsvp"
       class="min-h-screen flex items-center justify-center bg-slate-100 fade-up"
     >
-      <div class="max-w-3xl mx-auto px-4 text-center">
+      <div class="max-w-3xl mx-auto px-4 text-center mb-16">
+        <!-- Ilustrasi Ucapan -->
+        <div class="mb-6">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/4206/4206277.png"
+            alt="Thanks illustration"
+            class="w-24 h-24 mx-auto animate-float-slow"
+          />
+          <p class="mt-2 text-slate-600 italic text-sm">
+            Kami sangat menghargai konfirmasi kehadiran Anda. 🥰
+          </p>
+        </div>
+
         <h2 class="text-4xl text-slate-600 font-bold mb-4">
           Konfirmasi Kehadiran
         </h2>
         <p class="mb-8">
           Isi form di bawah ini untuk melakukan konfirmasi kehadiran.
         </p>
+
         <form
           id="my-form"
           method="POST"
@@ -398,7 +411,7 @@
               id="jumlah"
               name="jumlah"
               min="1"
-              max="5"
+              max="10"
               value="1"
               class="w-full mt-1 p-2 border border-gray-300 rounded"
               required
@@ -427,6 +440,12 @@
               Kirim
             </button>
           </div>
+
+          <p class="text-sm text-gray-500 italic">
+            Mohon isi dengan benar, agar kami bisa menyiapkan tempat terbaik
+            untuk Anda. 🎉
+          </p>
+
           <div id="loading-msg" class="text-center hidden">
             <div class="flex justify-center">
               <div
@@ -444,6 +463,19 @@
       class="min-h-screen flex items-center justify-center bg-white fade-up"
     >
       <div class="max-w-3xl mx-auto px-4 text-center">
+        <!-- Ilustrasi -->
+        <div class="mb-6">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/1043/1043026.png"
+            alt="Gift illustration"
+            class="w-20 h-20 mx-auto animate-float-slow"
+          />
+          <p class="mt-2 text-slate-600 italic text-sm">
+            Kami sangat berterima kasih atas setiap bentuk perhatian dan doa
+            🎁✨
+          </p>
+        </div>
+
         <span class="uppercase text-sm tracking-wider text-gray-500"
           >Ungkapan Tanda Kasih</span
         >
@@ -452,18 +484,57 @@
           Setiap doa dan kehadiran adalah hadiah terindah, namun jika ingin
           berbagi, kami telah siapkan informasi berikut.
         </p>
+
         <ul class="space-y-4 text-left max-w-md mx-auto">
-          <li class="bg-gray-100 p-4 rounded shadow">
-            <div class="font-bold">BCA</div>
-            <div>123456789 - Irawan Ardiantoro</div>
+          <li
+            class="bg-gray-100 p-4 rounded shadow flex justify-between items-center"
+          >
+            <div>
+              <div class="font-bold">BCA</div>
+              <div id="bcaRek">123456789 - Irawan Ardiantoro</div>
+            </div>
+            <button
+              onclick="copyRekening('bcaRek')"
+              class="text-sm bg-slate-600 text-white px-3 py-1 rounded hover:bg-slate-800"
+            >
+              Salin
+            </button>
           </li>
-          <li class="bg-gray-100 p-4 rounded shadow">
-            <div class="font-bold">MANDIRI</div>
-            <div>987654321 - Irawan Ardiantoro</div>
+          <li
+            class="bg-gray-100 p-4 rounded shadow flex justify-between items-center"
+          >
+            <div>
+              <div class="font-bold">MANDIRI</div>
+              <div id="mandiriRek">987654321 - Irawan Ardiantoro</div>
+            </div>
+            <button
+              onclick="copyRekening('mandiriRek')"
+              class="text-sm bg-slate-600 text-white px-3 py-1 rounded hover:bg-slate-800"
+            >
+              Salin
+            </button>
           </li>
         </ul>
+
+        <p class="mt-8 text-gray-500 text-sm italic">
+          Semoga kebaikan Bapak/Ibu/Saudara/i dibalas dengan rezeki berlipat. 🤲
+        </p>
       </div>
     </section>
+
+    <script>
+      function copyRekening(id) {
+        const text = document.getElementById(id).innerText;
+        navigator.clipboard.writeText(text).then(() => {
+          Swal.fire({
+            icon: "success",
+            title: "Disalin!",
+            text: `Nomor rekening berhasil disalin.`,
+            confirmButtonColor: "#64748b",
+          });
+        });
+      }
+    </script>
 
     <footer class="bg-slate-500 text-white py-4 mb-16">
       <div class="max-w-2xl mx-auto text-center">
@@ -601,7 +672,7 @@
               icon: "success",
               title: "Terima Kasih!",
               text: "Konfirmasi kehadiran Anda telah terkirim.",
-              confirmButtonColor: "#EC4899",
+              confirmButtonColor: "#1E293B",
             });
             form.reset();
           })
