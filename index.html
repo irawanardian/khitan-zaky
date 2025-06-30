@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zaky Fazriansyah</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:wght@100;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css">
+    <script src="countdown/simplyCountdown.min.js"></script>
+    <link rel="icon" href="img/logo-tittle.png" type="image/png">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <style>
+        body {
+            font-family: 'Work Sans', sans-serif;
+            /* Pastikan ini ada untuk mengunci scroll di awal */
+            overflow: hidden;
+        }
+
+        h1,
+        h2,
+        h3,
+        .navbar-brand {
+            font-family: 'Sacramento', cursive;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-gray-800">
+
+    <nav id="main-navbar" class="fixed bottom-0 w-full z-50 bg-pink-600 text-white py-2 shadow-t hidden">
+        <div class="flex justify-around items-center text-center">
+            <a href="#home" class="nav-link flex flex-col items-center text-xs px-2 py-1 text-white hover:text-yellow-200 transition duration-300">
+                <i class="bi bi-house-fill text-xl"></i>
+                Home
+            </a>
+            <a href="#info" class="nav-link flex flex-col items-center text-xs px-2 py-1 text-white hover:text-yellow-200 transition duration-300">
+                <i class="bi bi-list-task text-xl"></i>
+                Info
+            </a>
+            <a href="#story" class="nav-link flex flex-col items-center text-xs px-2 py-1 relative text-white hover:text-yellow-200 transition duration-300">
+                <i class="bi bi-calendar-event text-xl"></i>
+                Story
+                <span class="absolute top-0 right-1 h-2 w-2 bg-yellow-300 rounded-full"></span>
+            </a>
+            <a href="#gallery" class="nav-link flex flex-col items-center text-xs px-2 py-1 text-white hover:text-yellow-200 transition duration-300">
+                <i class="bi bi-image text-xl"></i>
+                Gallery
+            </a>
+            <a href="#rsvp" class="nav-link flex flex-col items-center text-xs px-2 py-1 text-white hover:text-yellow-200 transition duration-300">
+                <i class="bi bi-chat-dots text-xl"></i>
+                RSVP
+            </a>
+            <a href="#gifts" class="nav-link flex flex-col items-center text-xs px-2 py-1 text-white hover:text-yellow-200 transition duration-300">
+                <i class="bi bi-gift text-xl"></i>
+                Gifts
+            </a>
+        </div>
+    </nav>
+
+    <section id="hero"
+        class="w-full h-screen flex items-center justify-center text-white text-center bg-cover bg-center relative"
+        style="background-image: url('https://images.pexels.com/photos/3254036/pexels-photo-3254036.jpeg');">
+        <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+        <main class="relative z-10 p-6">
+            <p class="text-lg mb-2">Undangan Khitanan</p>
+            <h1 class="text-5xl md:text-7xl font-bold mb-2">Zaky Fazriansyah</h1>
+            <h4 class="text-xl">Kepada <span id="hero-name">Bapak/Ibu/Saudara/i,</span></h4>
+            <div class="simply-countdown my-6"></div>
+            <a href="#home" id="open-invite"
+                class="bg-white text-pink-500 font-semibold px-6 py-3 rounded hover:bg-pink-500 hover:text-white transition">Lihat
+                Undangan</a>
+        </main>
+    </section>
+
+    <section id="home" class="min-h-screen flex items-center justify-center bg-white">
+        <div class="max-w-3xl mx-auto text-center px-4">
+            <h2 class="text-3xl text-pink-500 font-bold mb-4">Assalamualaikum Warahmatullahi Wabarakatuh</h2>
+            <p class="mb-6">Dengan memohon Rahmat dan Ridho Allah SWT kami mengundang Bapak/Ibu/Saudara/I untuk menghadiri
+                Khitanan putra kami</p>
+            <h2 class="text-5xl font-bold text-gray-800 mb-4">Zaky Fazriansyah</h2>
+            <img src="img/zaki2.png" alt="Zaky Fazriansyah" class="w-40 h-40 object-cover rounded-full mx-auto mb-4">
+            <p>Putra ke 2 Dari Bapak Dede Nurdiansyah dan Ibu Juanita Rusyani</p>
+        </div>
+    </section>
+
+    <section id="info" class="py-20 bg-gray-100">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-4xl text-pink-500 font-bold mb-6">Informasi Acara</h2>
+            <p class="mb-4">Alamat: Jl. Masjid Nurul Yaqien No. 216 A Kel. Cinangka Kec. Sawangan Kota Depok</p>
+            <div class="mb-6">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.887299066601!2d106.7588301!3d-6.4087114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4m0!3e0!5m2!1s2025-07-04!2s2025-07-04!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m2!1s2025-07-04!2s2025-07-04!5e0!3m2!1sen!2sid!4m4!1s0x2e69efc5740b7971%3A0xc47e30d710c4d28d!2sMasjid%20Nurul%20Yaqien!3m2!1i1024!2i768!4f13.1!5m2!1s2025-07-04!2s2025-07-04"
+                    width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <a href="https://goo.gl/maps/R9seweCadg9MNyox5" target="_blank"
+                class="inline-block bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-600 mb-4">Klik untuk membuka peta</a>
+            <p class="text-sm text-gray-600">Diharapkan untuk tidak salah alamat dan tanggal. Manakala tiba di tujuan namun
+                tidak ada tanda-tanda sedang dilangsungkan pernikahan, boleh jadi Anda salah jadwal, atau salah tempat.</p>
+        </div>
+        <div class="max-w-2xl mx-auto mt-12">
+            <div class="bg-white border rounded shadow p-6 text-center">
+                <h3 class="text-xl font-bold mb-4">Tasyakuran Khitanan</h3>
+                <div class="flex justify-around mb-4">
+                    <div>
+                        <i class="bi bi-clock text-xl"></i>
+                        <p>09.00 - Selesai</p>
+                    </div>
+                    <div>
+                        <i class="bi bi-calendar3 text-xl"></i>
+                        <p>Senin, 04 Juli 2025</p>
+                    </div>
+                </div>
+                <p class="text-sm text-gray-600">Saat acara tasyakuran diharapkan untuk kondusif menjaga kekhidmatan dan
+                    kekhusyuan seluruh acara.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="story" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <span class="uppercase text-sm tracking-wider text-gray-500">Momen-Momen</span>
+            <h2 class="text-4xl text-pink-500 font-bold my-4">Zaky Fazriansyah</h2>
+            <p class="text-gray-700 mb-10">Penasaran sama tingkah polah Zaky yang menggemaskan? Yuk, intip momen lucunya yang
+                dijamin bikin senyum-senyum sendiri!.</p>
+            <div class="space-y-10">
+                <div class="flex flex-col md:flex-row items-center gap-6">
+                    <img src="img/zaky-3.png" alt="Zaky tidur" class="w-40 h-40 rounded-full object-cover">
+                    <div class="text-left">
+                        <h3 class="text-xl font-semibold">Pertama Bertemu</h3>
+                        <p class="text-sm text-gray-500 mb-1">1 Juni 2000</p>
+                        <p>"Baru jadi ilmuwan sehari… langsung tumbang. Baterai habis, harus dicas dulu!" 🔋💤😴</p>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row-reverse items-center gap-6">
+                    <img src="img/zaky-2.png" alt="Zaky sholat" class="w-40 h-40 rounded-full object-cover">
+                    <div class="text-left">
+                        <h3 class="text-xl font-semibold">Mulai Serius</h3>
+                        <p class="text-sm text-gray-500 mb-1">1 Januari 2005</p>
+                        <p>"Duo ustadz cilik lagi panggilan penting sama Yang Maha Kuasa. Jangan diganggu, nanti batal wudhu!" 😇🕌
+                        </p>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row items-center gap-6">
+                    <img src="img/zaky-1.png" alt="Zaky eksperimen" class="w-40 h-40 rounded-full object-cover">
+                    <div class="text-left">
+                        <h3 class="text-xl font-semibold">Tunangan</h3>
+                        <p class="text-sm text-gray-500 mb-1">7 November 2009</p>
+                        <p>"Ilmuwan cilik mencoba membuat ramuan rahasia… tapi sabunnya kebanyakan, jadi hasilnya cuma gelembung dan
+                            kekacauan!" 🧪🫧😂</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="py-20 bg-gray-100">
+        <div class="max-w-5xl mx-auto px-4 text-center">
+            <span class="uppercase text-sm tracking-wider text-gray-500">Memori Potret Zaky</span>
+            <h2 class="text-4xl text-pink-500 font-bold my-4">Galeri Foto</h2>
+            <p class="text-gray-700 mb-10">Kumpulan momen lucu, polos, dan penuh makna dari hari-hari kecil Zaky yang tak
+                terlupakan.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <img src="img/gallery/thumbnail/thumb-1.png" alt="Zaky Fazriansyah" class="w-full rounded">
+                <img src="img/gallery/thumbnail/thumb-2.png" alt="Zaky Fazriansyah" class="w-full rounded">
+                <img src="img/gallery/thumbnail/thumb-3.png" alt="Zaky Fazriansyah" class="w-full rounded">
+                <img src="img/gallery/thumbnail/thumb-4.png" alt="Zaky Fazriansyah" class="w-full rounded">
+                <img src="img/gallery/thumbnail/thumb-5.png" alt="Zaky Fazriansyah" class="w-full rounded">
+                <img src="img/gallery/thumbnail/thumb-6.png" alt="Zaky Fazriansyah" class="w-full rounded">
+                <img src="img/gallery/thumbnail/thumb-7.png" alt="Zaky Fazriansyah" class="w-full rounded">
+            </div>
+        </div>
+    </section>
+
+    <section id="rsvp" class="min-h-screen flex items-center justify-center bg-pink-100">
+        <div class="max-w-3xl mx-auto px-4 text-center">
+            <h2 class="text-4xl text-pink-500 font-bold mb-4">Konfirmasi Kehadiran</h2>
+            <p class="mb-8">Isi form di bawah ini untuk melakukan konfirmasi kehadiran.</p>
+            <form id="my-form" method="POST"
+                action="https://script.google.com/macros/s/AKfycbytAqigbEEb57yp74d-LTBOI51kyPd3xLLOjpC7jvAqdnMtnYYF-4QO/exec"
+                class="space-y-6">
+                <div>
+                    <label for="nama" class="block text-left font-medium">Nama</label>
+                    <input type="text" id="nama" name="nama" class="w-full mt-1 p-2 border border-gray-300 rounded" required>
+                </div>
+                <div>
+                    <label for="jumlah" class="block text-left font-medium">Jumlah</label>
+                    <input type="number" id="jumlah" name="jumlah" min="1" max="5" value="1"
+                        class="w-full mt-1 p-2 border border-gray-300 rounded" required>
+                </div>
+                <div>
+                    <label for="status" class="block text-left font-medium">Konfirmasi</label>
+                    <select id="status" name="status" class="w-full mt-1 p-2 border border-gray-300 rounded" required>
+                        <option value="">Pilih salah satu</option>
+                        <option value="Hadir">Hadir</option>
+                        <option value="Tidak Hadir">Tidak Hadir</option>
+                    </select>
+                </div>
+                <div>
+                    <button type="submit" class="bg-pink-500 text-white px-6 py-2 rounded hover:bg-pink-600">Kirim</button>
+                </div>
+                <div id="loading-msg" class="text-center hidden">
+                    <div class="flex justify-center">
+                        <div class="animate-spin rounded-full h-6 w-6 border-t-2 border-b-2 border-pink-500"></div>
+                    </div>
+                    <p class="mt-2 text-sm text-pink-700">Mengirim data...</p>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section id="gifts" class="min-h-screen flex items-center justify-center bg-white">
+        <div class="max-w-3xl mx-auto px-4 text-center">
+            <span class="uppercase text-sm tracking-wider text-gray-500">Ungkapan Tanda Kasih</span>
+            <h2 class="text-4xl text-pink-500 font-bold my-4">Kirim Hadiah</h2>
+            <p class="text-gray-700 mb-8">Setiap doa dan kehadiran adalah hadiah terindah, namun jika ingin berbagi, kami telah siapkan informasi berikut.</p>
+            <ul class="space-y-4 text-left max-w-md mx-auto">
+                <li class="bg-gray-100 p-4 rounded shadow">
+                    <div class="font-bold">BCA</div>
+                    <div>123456789 - SANDHIKA GALIH</div>
+                </li>
+                <li class="bg-gray-100 p-4 rounded shadow">
+                    <div class="font-bold">MANDIRI</div>
+                    <div>987654321 - SANDHIKA GALIH</div>
+                </li>
+                <li class="bg-gray-100 p-4 rounded shadow flex flex-col items-center">
+                    <div class="font-bold mb-2">Saweria</div>
+                    <img src="img/saweria.png" alt="Saweria QR" class="w-40 rounded">
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="bg-pink-500 text-white py-8">
+        <div class="max-w-4xl mx-auto text-center">
+            <small class="block">© 2023 DiNo Wedding. All Rights Reserved.</small>
+            <small class="block">Design by <a href="https://instagram.com/sandhikagalih"
+                    class="underline">@sandhikagalih</a>.</small>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="#"><i class="bi bi-instagram text-xl"></i></a>
+                <a href="#"><i class="bi bi-youtube text-xl"></i></a>
+                <a href="#"><i class="bi bi-twitter text-xl"></i></a>
+                <a href="#"><i class="bi bi-facebook text-xl"></i></a>
+                <a href="#"><i class="bi bi-tiktok text-xl"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Inisialisasi Countdown
+        simplyCountdown('.simply-countdown', {
+            year: 2025, // Tahun acara (sesuaikan dengan tanggal khitanan Zaky)
+            month: 7, // Bulan acara (Juli, 0=Januari, 6=Juli)
+            day: 4, // Tanggal acara
+            hours: 9, // Jam acara
+            minutes: 0, // Menit acara
+            seconds: 0, // Detik acara
+            enableUtc: false // Gunakan waktu lokal
+        });
+
+        const openInviteButton = document.getElementById('open-invite');
+        const mainNavbar = document.getElementById('main-navbar');
+        const sections = document.querySelectorAll("section[id]");
+        const navLinks = document.querySelectorAll("#main-navbar a.nav-link");
+
+        // --- LOGIKA KONDISI HALAMAN SAAT DIMUAT ---
+        // Ini akan memastikan halaman selalu direset ke kondisi awal saat refresh
+        document.addEventListener('DOMContentLoaded', () => {
+            // Pastikan body terkunci dan navbar tersembunyi
+            document.body.style.overflow = 'hidden';
+            mainNavbar.classList.add('hidden');
+
+            // Paksa scroll ke paling atas
+            window.scrollTo(0, 0);
+
+            // Ambil nama dari URL parameter (jika ada)
+            const urlParams = new URLSearchParams(window.location.search);
+            const namaTamu = urlParams.get('to');
+            if (namaTamu) {
+                document.getElementById('hero-name').textContent = decodeURIComponent(namaTamu);
+            }
+        });
+
+        // Event listener untuk tombol 'Lihat Undangan'
+        openInviteButton.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.body.style.overflow = 'auto'; // Izinkan scrolling
+            mainNavbar.classList.remove('hidden'); // Tampilkan navbar
+
+            // Hapus hash dari URL setelah di-scroll (tetap penting)
+            history.replaceState(null, null, window.location.pathname + window.location.search);
+
+            // Scroll ke section #home (atau section awal yang ingin ditampilkan setelah dibuka)
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+
+        // Highlight active nav item on scroll
+        window.addEventListener("scroll", () => {
+            let current = "";
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 80;
+                if (window.scrollY >= sectionTop) {
+                    current = section.getAttribute("id");
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove("text-yellow-200");
+                if (link.getAttribute("href") === `#${current}`) {
+                    link.classList.add("text-yellow-200");
+                }
+            });
+        });
+
+        // Form Submission (Google Apps Script)
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbytAqigbEEb57yp74d-LTBOI51kyPd3xLLOjpC7jvAqdnMtnYYF-4QO/exec'; // Ganti dengan URL Google Apps Script kamu
+        const form = document.forms['my-form'];
+        const loadingMsg = document.getElementById('loading-msg');
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            loadingMsg.classList.remove('hidden');
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    loadingMsg.classList.add('hidden');
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Terima Kasih!',
+                        text: 'Konfirmasi kehadiran Anda telah terkirim.',
+                        confirmButtonColor: '#EC4899'
+                    });
+                    form.reset();
+                    console.log('Success!', response);
+                })
+                .catch(error => {
+                    loadingMsg.classList.add('hidden');
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: 'Terjadi kesalahan saat mengirim konfirmasi. Coba lagi nanti.',
+                        confirmButtonColor: '#EC4899'
+                    });
+                    console.error('Error!', error.message);
+                });
+        });
+
+    </script>
+</body>
+
+</html>
